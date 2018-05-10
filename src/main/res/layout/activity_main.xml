@@ -6,13 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:id="@+id/DataList"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark">
+        </TextView>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text ="Product name:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/NameProduct"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text ="Product amount/wieght"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/AmountProd"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text = "Add product"
+            android:id="@+id/AddProd">
+
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text = "Delete product"
+            android:id="@+id/DelProd"
+            android:layout_marginTop="10dp">
+        </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text = "Clear all"
+                android:id="@+id/ClearAll"
+                android:layout_marginTop="10dp">
+            </Button>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
